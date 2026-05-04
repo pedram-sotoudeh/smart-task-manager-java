@@ -40,7 +40,7 @@ public class Main {
                     taskManager.sortTasksByPriority();
                     break;
                 case 9:
-                    taskManager.showCompletedTasks();
+                    taskManager.showStatistics();
                     break;
                 case 10:
                     taskManager.showPendingTasks();
@@ -73,7 +73,7 @@ public class Main {
         System.out.println("6. Show Overdue Tasks");
         System.out.println("7. Sort Tasks by Deadline");
         System.out.println("8. Sort Tasks by Priority");
-        System.out.println("9. Show Completed Tasks");
+        System.out.println("9. Show Task Statistics");
         System.out.println("10. Show Pending Tasks");
         System.out.println("11. Clear All Tasks");
         System.out.println("0. Exit and Save");

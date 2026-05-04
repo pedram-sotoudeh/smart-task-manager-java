@@ -315,4 +315,31 @@ public class TaskManager {
             // file may not exist on first run
         }
     }
+
+public void showStatistics() {
+    int total = tasks.size();
+    int completed = 0;
+    int pending = 0;
+    int overdue = 0;
+
+    LocalDate today = LocalDate.now();
+
+    for (Task task : tasks) {
+        if (task.isCompleted()) {
+            completed++;
+        } else {
+            pending++;
+            if (task.getDeadline() != null && task.getDeadline().isBefore(today)) {
+                overdue++;
+            }
+        }
+    }
+
+    System.out.println("\n===== TASK STATISTICS =====");
+    System.out.println("Total Tasks: " + total);
+    System.out.println("Completed Tasks: " + completed);
+    System.out.println("Pending Tasks: " + pending);
+    System.out.println("Overdue Tasks: " + overdue);
+}
+
 }
