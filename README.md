@@ -45,9 +45,10 @@ A structured and object-oriented task management system developed in Java. This 
 
 ## ▶️ How to Run
 
-### Compile:
-```bash
-javac src/com/taskmanager/app/*.java
+Run the project directly in Eclipse by clicking the Run button (▶️).
+
+(No terminal commands needed.)
+
 
 ## 🎯 Purpose of the Project
 
@@ -55,4 +56,5 @@ This project was developed to strengthen my understanding of Java programming, o
 
 
 ## 👤 Author
+
 Pedram Sotoudeh
